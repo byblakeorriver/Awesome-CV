@@ -1,0 +1,132 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Questionnaire}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvparagraph}
+
+%---------------------------------------------------------
+
+    \begin{enumerate}
+      \item \textbf{Can you provide an overview of your current role?} \\
+      \begin{quote}
+          XAs a lead backend engineer at DeMark Analytics my colleagues and I design, develop, and scale the backend that supports our SaaS charting application (\url{https://symbolik.com}).
+          My role involves leading technical initiatives, system design, and ensuring the platform meets availability, performance and scalability requirements.
+
+          a. \textbf{Tell me about some of your daily activities in your current role?} \\
+          My daily responsibilities involve a balance of technical leadership, hands-on development, and team coordination.
+          Each day starts with a meeting with the project manager to review the status of backend projects and discuss upcoming initiatives.
+          I then review monitoring alerts, address high-priority issues, and connect with customer service leads regarding user tickets.
+
+          As the backend team lead, I facilitate our team’s stand-up and attend the stand-ups of any collaborating teams to ensure alignment across efforts.
+          I delegate tasks, provide clarity on priorities, and guide responses to alerts or support tickets.
+
+          In addition to leadership tasks, I spend significant time writing code, performing code reviews, and ensuring that the technical decisions align with our long-term system design goals.
+          I collaborate closely with senior engineers on architecture discussions, focusing on technology choices, technical challenges, and scalable solutions.
+          I also mentor junior developers, helping them overcome obstacles and fostering their growth.
+
+          Near the end of each sprint, I oversee the progress of deliverables through QA, lead preparation for demos, and participate in sprint retrospectives to continuously improve team processes.
+          Between sprints, I focus on planning and system design, ensuring that upcoming tickets align with both short-term goals and long-term architectural strategies.
+
+          b. \textbf{What is your group/team responsible for?} \\
+          Our backend team is responsible for designing, developing, and managing everything that operates behind the scenes, beyond the browser.
+          Our key responsibilities include:
+
+            \begin{itemize}
+                \item Realtime and Batch Data Processes: Designing and maintaining systems for large-scale data processing.
+                \item API Layer: Developing and maintaining robust APIs that power our applications, complete with documentation.
+                \item CRUD Services: Supporting all create, read, update, and delete operations behind our APIs.
+                \item Scheduled Workloads: Building and managing services that handle scheduled tasks.
+            \end{itemize}
+          Our team ensures the backbone of the system operates efficiently, reliably, and scalably.
+
+      \end{quote}
+      \item \textbf{What is your preferred coding language?} \\
+      \begin{quote}
+          XMy preferred language is Rust.
+          I have been using it as my primary language for the last 5 years.
+          I appreciate its syntax, its focus on memory safety, and its speed.
+          I also use Scala and Golang often as well.
+
+          a. \textbf{What is the percentage of time you spend coding day to day?} \\
+          I spend approximately 50\% of my day writing code.
+
+          b. \textbf{How much of your time is currently spent on frontend vs. backend?} \\
+          I spend 100\% of my time on backend projects.
+
+          c. \textbf{Do you prefer frontend, backend, or full stack roles?} \\
+          I prefer backend roles, but am able to operate in a full stack role.
+
+      \end{quote}
+      \item \textbf{Can you tell me about your experience leading code/design reviews?} \\
+      \begin{quote}
+          XIf I have a new developer, I will have them explain their code to me in person.
+          I find this feels more personal to them.
+          They are more likely to ask questions and support their decision-making in these situations.
+          This helps them build their confidence as a developer.
+          Once they have more confidence I will still do the in person reviews, but less often.
+          If the developer whose code I am reviewing is more senior, I will look for any mistakes, but also acknowledge that they are capable in making decisions.
+          With them, I spend more time asking questions, just so I can learn more about the work they are doing.
+
+          As far as design reviews, we don't really have a formal method for that at my company, but we do foster an environment that welcomes challenges to design decisions.
+          Only by working through the problem together can we get to the best outcome.
+
+          a. \textbf{What additional mentorship experience would you like to share? Please describe.} \\
+          Another way that I mentor is that I like to engage the more junior and mid-level developers/engineers in the higher level design meetings.
+          This gets them to ask questions, share ideas, and gain more confidence.
+          I also like to encourage my peers to challenge me.
+          This helps me become a better engineer.
+
+      \end{quote}
+      \item \textbf{How many years of system design experience do you have?} \\
+      \begin{quote}
+          XI have been at DeMark Analytics for 7 years, and I have been designing systems for them for the last 5 years.
+          Since then, I have been a key player in every backend design decision.
+
+      \end{quote}
+      \item \textbf{When it comes to high level architectural design, what part of the system architecture are you currently responsible for building?
+      (i.e.\ new features/components or core architecture)} \\
+      \begin{quote}
+          XI am responsible for building both new features and contributing to the core architecture.
+          For example, I just got finished designing and implementing a realtime stock market monitoring API.
+          It serves subscriptions to realtime user-written analytic calculations performed on realtime market data using our domain specific language, Slang.
+          It will serve frontend features that will display the outputs to the users custom studies.
+          I chose the technologies we used and implemented the services needed to support it.
+
+          Additionally, right before designing the market monitoring API, I worked on optimizing our CRUD service layer.
+          Response times had a P99 of 5 to 7 seconds due to poor database schema design and backend technology decisions made by primarily frontend engineers.
+          When that project was complete my design was giving a P99 that was sub second while using far less resources than the previous design.
+          Another one of the main goals of that project was to make it simple to write CRUD services for new resource types.
+          It used to require 10s of thousands of lines to write a CRUD service on our platform.
+          Now through the creation of SDKs and libraries a resource type can have a CRUD service created for it in just about 200 lines of code.
+          Most of that code being schema definitions and configuration.
+
+          a. \textbf{What percentage of time do you spend on design or architecture day to day?} \\
+          I spend around 20--30\% of my time on design and architecture tasks.
+          However, this percentage can increase during the early stages of a project.
+
+          b. \textbf{Approximately how many users or transactions does the system support?} \\
+          Our realtime pipeline streams and aggregates around 150,000 trades per second during peak market hours.
+          These trades cascade into aggregate updates, that in turn update calculations throughout the entire platform.
+          We currently only have around 3,000 daily active users, but through various forms of load testing we were able to simulate hundreds of thousands of our heaviest users in our QA environment and prove that the CRUD service layer can scale accordingly.
+
+          c. \textbf{How much of this project did you lead/drive yourself?} \\
+          Since I have been making core design decisions I have lead or played a key role in every backend project at our company.
+
+      \end{quote}
+      \item \textbf{Are you open to relocating to Seattle or Bellevue, WA?} \\
+      \begin{quote}
+          XYes, I am open to relocating to Seattle or Bellevue, WA!
+      \end{quote}
+      \item \textbf{What is the total compensation range that you'd be targeting?} \\
+      \begin{quote}
+          XI am seeking a total compensation range of \$280K to \$310K, with a base pay of at least \$180K.
+          Of course, I am open to discussing compensation further.
+
+      \end{quote}
+    \end{enumerate}
+\end{cvparagraph}
